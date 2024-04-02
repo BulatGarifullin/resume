@@ -1,80 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме</title>
-    <meta name="keywords" content="html, course, css, tags, резюме">
-    <meta name="description" content="Это резюме на html">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="vladilen, cv, resume">
+  <meta name="description" content="Это сайт - резюме Владилена Минина">
+  <link rel="stylesheet" href="/Css-course//Resume/style.css">
+  <title>Vladilen Resume</title>
 </head>
 <body>
-    <img src="img/photo_2024-02-27_14-38-42.jpg" alt="Photo" width="150">
-    <h1>Гарифуллин Булат</h1>
-    <p>Я основатель одноименного <strong>Youtube-канала</strong> и онлайн-школы <strong>Result School.</strong><br>Я <em>люблю путешествовать,заниматься спортом и программировать.</em></p>
-    <h3>Список социальных сетей:</h3>
-    <a href="https://Instagram.com" target="_blank">Instagram</a> |
-    <a href="https://Telegram.com" target="_blank">Telegram</a> |
-    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Путешествия</li>
-        <li>Блоггинг</li>
-        <li>Горные лыжи</li>
-        <li>ММА</li>
-    </ol>
-    <h2>Опыт Работы</h2>
-    <table width="500">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>LPTracker</td>
-                <td>Frontend</td>
-                <td>2015-2016</td>
-            </tr>
-            <tr>
-                <td>EPAM</td>
-                <td>Software Engineer</td>
-                <td>2016-2017</td>
-            </tr>
-            <tr>
-                <td>Software Outsourcing Services</td>
-                <td>Senior Frontend</td>
-                <td>2017-2019</td>
-            </tr>
-            <tr>
-                <td>YouTube</td>
-                <td>Blogger</td>
-                <td>2019-по н.вр.</td>
-            </tr>
-            <tr>
-                <td>Result University</td>
-                <td>CEO</td>
-                <td>2021-по н.вр.</td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="container">
+
+  <div class="info">
+  <img src="/Css-course/Resume/Bulat.jpg" alt="Владилен Минин" class="avatar">
+
+  <div class="info-text">
+  <h1>Владилен Минин</h1>
+
+  <p>Я основатель одноименного <strong>Youtube канала</strong> и онлайн школы по программированию <strong>Result School</strong></p>
+
+  <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
+
+  <h4>Список социальных сетей:</h4>
+
+  <a href="https://www.instagram.com/vladilen.minin/" target="_blank">Instagram</a>
+  |
+  <a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a>
+  |
+  <a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Youtube</a>
+  </div>  
+  </div>
+  <div class="card bg-green">
+  <h2>Мои хобби</h2>
+
+  <ol class="list">
+    <li>Путешествия</li>
+    <li>Блоггинг</li>
+    <li>Горные лыжи</li>
+    <li>ММА</li>
+  </ol>
+
+</div>
+
+  <div class="card bg-red">
+  <h2>Опыт работы</h2>
+
+  <table class="table">
+    <!-- <thead>
+      <tr>
+        <th>Название</th>
+        <th>Должность</th>
+        <th>Год</th>
+      </tr>
+    </thead> -->
+    <tbody>
+      <tr>
+        <td>LPTracker</td>
+        <td>Frontend</td>
+        <td>2015-2016</td>
+      </tr>
+      <tr>
+        <td>EPAM</td>
+        <td>Software Engineer</td>
+        <td>2016-2017</td>
+      </tr>
+      <tr>
+        <td>Software Outsourcing Services</td>
+        <td>Senior Frontend</td>
+        <td>2017-2019</td>
+      </tr>
+      <tr>
+        <td>Youtube</td>
+        <td>Blogger</td>
+        <td>2019 - сейчас</td>
+      </tr>
+      <tr>
+        <td>Result School</td>
+        <td>CEO</td>
+        <td>2021 - сейчас</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+  <div class="card bg-yellow">
+    <h2>Мои курсы</h2>
+    <ul class="link-list">
+      <li>
+        <a href="https://vladilen.ru/junior">Получение профессии Frontend Разработчика</a>
+      </li>
+      <li>
+        <a href="https://vladilen.ru/courses">Все курсы</a>
+      </li>
+    </ul>
+  </div>
+
+  <form action="/" class="form">
     <h2>Связаться со мной</h2>
-    <form action="">
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+
+    <div class="form-row">
+    <div class="form-group">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" placeholder="Введите имя">
     </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
+
+    <div class="form-group">
+      <label for="email">Ваш email:</label>
+      <input type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
-    <input type="submit" value="Отправить!">
-    </form>
+
+    <div class="form-group">
+      <label for="message">Ваше сообщение:</label>
+      <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+    </div>
+
+    <input type="button" class="btn" value="Отправить!">
+  </form>
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
 </body>
-</html>   
+</html>
